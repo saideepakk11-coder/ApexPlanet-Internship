@@ -1,0 +1,871 @@
+:root {
+    --primary: #004741;
+    --background: #F7F5EF;
+    --card: #DCE9E4;
+    --accent: #ea9037;
+    --text: #172321;
+    --secondary-text: #52706C;
+    --white: #FFFFFF;
+}
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary);
+    z-index: 500;
+}
+.logo{
+    width: 200px;
+}
+.join-btn{
+    margin-right: 20px;
+    width:120px;
+    padding: 12px;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 18px;
+    border: 0;
+    background-color: var(--accent);
+}
+.join-btn:hover{
+    color: white;
+    background-color: #ef9a46;
+}
+.bi-arrow-right{
+    margin-left: 10px;
+    font-weight: bold;
+}
+.hero-section{
+    padding-left: 30px;
+    padding-top: 100px;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.hero-background{
+    position: absolute;
+    top: 0;
+    right: 0;
+    object-fit:cover;
+    width: auto;
+    height: 88%;
+    z-index: -1;
+}
+.hero-section p{
+    margin: 0;
+    color: var(--text);
+}
+.top{
+    letter-spacing: 4px;
+    color: var(--secondary-text);
+}
+.hero-section h1{
+    color: var(--text);
+    margin: 0;
+    font-size: 70px;
+    line-height: 75px;
+
+}
+.you{
+    color: var(--accent);
+}
+.hero-matter{
+    width: 30%;
+    color: var(--secondary-text);
+}
+.join-btn-hero{
+    margin-left: 50px;
+    width:220px;
+    padding: 15px 20px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 25px;
+    border: 0;
+    background-color: var(--accent);
+}
+.join-btn-hero:hover{
+    color: white;
+    background-color: #ef9a46;
+}
+.hero-blocks{
+    margin-top: 25px;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.dumbbell{
+    width: 50px;
+}
+.icon-hero{
+    font-size: 30px;
+}
+.each-block-left{
+    flex: 1;
+    margin-right:50px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+}
+.each-block-left:after{
+    content: "";
+
+    position: absolute;
+
+    right:-25px;
+
+    height: 40px;
+    width: 1px;
+
+    border-radius: 5px;
+   
+    background-color:#a8a9a9;
+}
+
+.each-block{
+     flex: 1;
+    margin-right:50px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.each-block p{
+    line-height: 25px;
+    font-weight: 500;
+    color: var(--secondary-text);
+}
+.each-block-left p{
+    line-height: 25px;
+    font-weight: 500;
+    color: var(--secondary-text);
+}
+/*----------------------------------------------About Page-------------------*/
+.about{
+    padding-left: 30px;
+    box-sizing: border-box;
+    height: 100%;
+    background-color: rgb(235, 246, 246);
+    display: flex;
+    align-items: center;
+}
+.about-left{
+    width: 40%;
+    padding-left: 50px;
+}
+.about-left p{
+    margin: 0;
+    color: var(--secondary-text);
+}
+.about-left h1{
+    margin:10px 0 15px 0;
+    font-size: 80px;
+    font-weight: 800;
+    color: var(--text);
+    line-height: 80px;
+}
+.about-top{
+    letter-spacing: 3px;
+}
+.about-right{
+    padding-right: 60px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.about-block{
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-block p{
+    margin: 0;
+    text-align: center;
+    color: var(--secondary-text);
+}
+.about-block img{
+    width: 120px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 40%;
+    background-color: rgb(211, 237, 237);
+}
+/*-----------------------------------------Workout page--------------------------*/
+.workouts{
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.work-top{
+   margin: 50px 0 0 25px;
+   color: var(--secondary-text);
+}
+.workouts h1{
+    margin: 0;
+    font-size: 50px;
+    color: var(--primary);
+}
+.workouts-heading{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.workouts-heading p{
+    letter-spacing: 0.5px;
+    margin: 0;
+    width: 25%;
+    color: var(--text);
+}
+.workout-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    padding: 30px;
+}
+.workout-each-card{
+    border-radius: 25px;
+    background-color: rgba(141, 174, 174, 0.273);
+}
+.workout-each-card p{
+    margin: 0;
+}
+.workout-each-card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 25px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.card-head{
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--text);
+}
+.card-bottom{
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+    color: var(--secondary-text);
+    gap: 20px;
+}
+.card-btn{
+    width: 60px;
+    padding: 10px 10px 10px 0;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: 900;
+    border: 0;
+    color: var(--text);
+    background-color:rgba(59, 126, 126, 0.529);
+}
+.card-btn:hover{
+    color: white;
+    background-color:rgba(84, 151, 151, 0.529);
+
+}
+/*-------------------------------------------To Do List------------------------------------*/
+
+.todo-list{
+    padding-top: 70px;
+    min-height: 70vh;
+    display: flex;
+    flex-wrap:wrap;
+}
+.todo-left{
+    margin-left:120px;
+    width: 35%;
+}
+.todo-top{
+    margin: 30px 0 0 30px;
+    font-weight: 600;
+    color: var(--accent);
+    position: relative;
+}
+.todo-top::before{
+    content: "";
+    position: absolute;
+
+    height: 2px;
+    width: 20px;
+
+    left: -30px;
+    top: 10px;
+    
+
+    background-color: #ea9037;
+}
+.head-tail h1{
+
+    margin: 10px 0 0 0;
+    letter-spacing: 0px;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 85px;
+}
+.head-tail h1 span{
+    font-size: 110px;
+    color: var(--accent);
+}
+.head-tail p{
+    margin: 0;
+    font-size: 22px;
+    color: var(--secondary-text);
+}
+.enter-btn{
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    background-color:#7f87864a;
+    padding: 8px;
+    border-radius: 12px;
+}
+.dumbbell-img{
+    margin-right: 10px;
+    width: 25px;
+}
+#workout{
+    background-color: transparent;
+}
+.add-workout-btn{
+    margin: 10px 0 20px 0;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 700;
+    background-color:rgb(255, 123, 0);
+    border: 0;
+    border-radius: 12px;
+    color: white;
+    padding: 10px;
+}
+.add-workout-btn:hover{
+    background-color:rgb(226, 141, 61);
+}
+.bi-plus-lg{
+    margin-right: 12px;
+    -webkit-text-stroke: 1px currentColor;
+}
+.work-btm{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.each-work-icon-heart p{
+    margin:0;
+}
+.each-work-icon p{
+    margin: 0;
+    color: var(--secondary-text);
+}
+.each-work-icon{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+.each-work-icon p strong{
+    color: var(--primary);
+}
+.workout-icon{
+    margin-bottom: 5px;
+    padding: 10px 16px 10px 16px;
+    color: var(--primary);
+    border-radius: 50%;
+    background-color: rgba(18, 155, 164, 0.307);
+    font-size: 20px;
+    border: 1px solid var(--primary);
+}
+.todo-right{
+    margin-top: 50px;
+    margin-left:200px;
+    width: 450px;
+    height: 450px;
+    padding: 10px 20px 10px 30px;
+    border: 2px solid teal;
+    border-radius: 25px;
+    background-color: #DEE6DF;
+}
+.todo-top2{
+    padding-left:20px ;
+    font-weight: 600;
+    color: var(--primary);
+    position: relative;
+}
+.todo-top2::before{
+    content: "";
+    position: absolute;
+
+    height: 2px;
+    width: 20px;
+
+    left: -10px;
+    top: 8px;
+    
+    background-color: #ea9037;
+}
+.empty-workout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.empty-image-db{
+    padding-top:30px ;
+    width: 150px;
+    height: 150px;
+}
+.empty-workout h3{
+    color: var(--text);
+    font-size: 30px;
+}
+.empty-workout p{
+    color: var(--secondary-text);
+}
+.each-workout-item{
+    width: 90%;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 10px 10px 20px;
+    color: var(--text);
+    border: 1px solid var(--primary);
+    border-radius: 12px;
+    background-color: #c9d4ca;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bi-trash{
+    color: red;
+    font-size: 20px;
+}
+.deleteBtn{
+    background-color: transparent;
+    border: 0;
+}
+.right-workout{
+    max-height: 380px;
+    overflow-y:scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.right-workout::-webkit-scrollbar{
+    width: 6px;
+}
+.right-workout::-webkit-scrollbar-thumb{
+    background: var(--secondary-text);
+    border-radius: 10px;
+}
+/*---------------------------------------------Form----------------------------------------*/
+.formm{
+    margin-top: 100px;
+    height: 100%;
+}
+.form-head{
+    margin: 0;
+    font-size: 60px;
+    font-weight: 800;
+    text-align: center;
+    color: var(--text);
+}
+.form-head span{
+    color: var(--accent);
+}
+form{
+    width: 380px;
+    padding: 25px;
+    margin: 10px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 2px solid var(--secondary-text);
+    border-radius: 25px;
+    background-color: #DEE6DF;
+}
+form h2{
+    margin: 0;
+    font-weight: 800;
+    font-size: 30px;
+    color: var(--text);
+}
+form h2 span{
+    color: var(--accent);
+}
+form p{
+    margin: 0;
+    color: var(--secondary-text);
+}
+input{
+    width: 100%;
+    border: 0;
+}
+input:focus{
+    outline: none;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #FFFFFF inset;
+    -webkit-text-fill-color: #172321;
+}
+textarea{
+    border: 0;
+}
+textarea:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #FFFFFF inset;
+    -webkit-text-fill-color: #172321;
+}
+textarea:focus{
+    outline: none;
+}
+.form-input{
+    padding: 5px 5px 5px 10px;
+    display: flex;
+    gap: 8px;
+    border-radius: 12px;
+    background-color: white;
+}
+label{
+    margin-top: 8px;
+}
+.send-btn{
+    text-align: center;
+    margin-top:10px;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 550;
+    background-color: rgb(255, 123, 0);
+    color: white;
+    border: 0;
+    border-radius: 10px;
+}
+.send-btn:hover{
+    background-color: rgb(239, 138, 43);
+}
+.bi-send-fill{
+    margin-right: 10px;
+}
+.form-error{
+    color: red;
+    margin-top: 3px;
+    text-align: center;
+    font-size: 12px;
+    width: 200px;
+}
+
+
+
+/*-----------------------footer--------------------*/
+
+.footer{
+    margin-top: 100px;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+}
+.footer img{
+    width: 25%;
+    height: 100px;
+}
+.footer-top{
+    padding: 20px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-center{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+.btm{
+    margin-right: 10px;
+}
+.footer-center p {
+    margin: 0;
+}
+.btm-head{
+    letter-spacing: 2px;
+}
+.footer-right{
+    color: white;
+}
+.btm-icon{
+    background-color: var(--secondary-text);
+    padding: 12px 17px 12px 17px;
+    border-radius: 50%;
+    font-size: 25px;
+    color: inherit;
+}
+.footer-logos{
+    display: flex;
+    gap: 20px;
+}
+.footer-bottom{
+    color: var(--card);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px 15px 50px;
+}
+@media (max-width:768px){
+
+    .hero-section{
+        position: relative;
+        box-sizing: border-box;
+        background-color: rgb(235, 246, 246);
+    }
+    .hero-background{
+        display: none;
+    }
+    .hero-section h1{
+        font-size: 100px;
+        line-height: 95px;
+    }
+    .hero-matter{
+        width: 65%;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        gap: 50px;
+    }
+    .about-left h1{
+        width: 80%;
+    }
+
+    .about-left{
+    width: 100%;
+    padding-left: 0;
+    }
+    .about-right{
+        width: 100%;
+        padding-right: 0;
+    }
+    .workouts h1{
+        line-height: 50px;
+    }
+    .workouts-heading p{
+        width: 50%;
+    }
+    .workout-cards{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .workout-each-card{
+        width: 80%;
+    }
+    .todo-left{
+        margin: auto;
+        width: 80%;
+    }
+    .todo-right{
+        width: 70%;
+        margin: 20px auto;
+    }
+    .formm{
+        margin: 100px auto;
+    }
+    .form-head{
+        font-size: 50px;
+    }
+
+    .footer img{
+        width: 200px;
+        height: 120px;
+    }
+    .footer-top{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .footer-center{
+        padding-top: 20px;
+    }
+    
+}
+@media (max-width:420px) {
+    .logo{
+        width: 100px;
+    }
+    .hero-section{
+        min-height: 100%;
+    }
+    .join-btn{
+        width: 80px;
+        padding: 8px;
+        font-size: 10px;
+    }
+    .bi-arrow-right{
+        margin: 0;
+    }
+    .hero-section h1{
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .hero-section{
+        gap: 15px;
+    }
+    .hero-matter{
+        width: 90%;
+    }
+    .join-btn-hero{
+        margin-top: 20px;
+    }
+    .icon-hero{
+        font-size: 20px;
+    }
+    .each-block-left p{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .each-block p{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .dumbbell{
+        width: 30px;
+    }
+    .about{
+        height: 600px;
+        padding-left: 15px;
+    }
+    .about-left{
+        width: 100%;
+    }
+    .about-left h1{
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .about-right{
+        width: 100%;
+    }
+    .about-block img{
+        width: 60px;
+    }
+    .about-block p{
+        font-size: 10px;
+        text-align:center;
+    }
+    .workouts-heading{
+        padding-left: 10px;
+        flex-direction: column;
+    }
+    .workouts-heading p{
+        width: 100%;
+    }
+    .workouts{
+        padding-left: 10px;
+    }
+    .workout-cards{
+        grid-template-columns: 1fr;
+        gap: 25px;
+
+    }
+    .workout-each-card{
+        width: 100%;
+    }.todo-right{
+        width: 80%;
+    }
+    .each-workout-item{
+        width: 85%;
+    }
+    .bi-trash:hover{
+    color: rgb(15, 14, 14);
+    }
+    .card-btn{
+        padding: 10px;
+        width:25%;
+    }
+    .workout-each-card img{
+        width: 100%;
+        height: 150px;
+    }
+
+    .head-tail h1{
+        font-size: 60px;
+        line-height: 50px;
+    }
+    .head-tail h1 span{
+        font-size: 60px;
+    }
+    .head-tail p{
+        font-size: 15px;
+    }
+    .work-btm{
+        padding: 30px 30px 30px 0px;
+        gap: 20px;
+    }
+    .each-work-icon-heart p{
+        margin: 0;
+        width: max-content;
+    }
+    .workout-icon{
+        font-size: 13px;
+    }
+    .each-work-icon p{
+        font-size: 12px;
+    }
+
+    .each-work-icon-heart{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .each-work-icon-heart{
+        font-size: 13px;
+    }
+    .empty-workout h3{
+        font-size: 25px;
+    }
+    .empty-workout p{
+        margin: 0;
+        font-size: 15px;
+    }
+    form h2{
+        font-size: 25px;
+    }
+    form{
+        width: 70%;
+    }
+    .footer-top{
+        gap: 20px;
+        flex-direction: column;
+    }
+    .footer img{
+        width: 100%;
+    }
+    .btm{
+        padding-left: 15%;
+    }
+    .footer-logos{
+        padding-left: 15%;
+        gap: 30px;
+    }
+    .btm-head{
+        text-align: center;
+    }
+    .footer-bottom{
+        margin-top: 30px;
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
