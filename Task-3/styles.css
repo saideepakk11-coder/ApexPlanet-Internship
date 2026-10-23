@@ -916,6 +916,14 @@ textarea {
 ================================ */
 
 @media (max-width: 900px) {
+     #back-to-intro{
+        top: -5px;
+        left: 0;
+        font-size: 15px;
+        width: 30px;
+        height: 30px;
+
+    }
 
     .quiz-section {
         padding: 80px 5%;
