@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KORVA | Fitness Products</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Replace style.css with your existing CSS filename -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
+
+</head>
+
+<body class="products-page">
+<!--------------------------------------- NAVBAR -------------------------->
+<header class="navbar">
+
+    <div class="nav-left">
+        <a href="index.html#home">
+            <img src="logo.png" alt="KORVA Logo" class="logo">
+        </a>
+    </div>
+
+    <nav class="page-navigation">
+        <a href="index.html#home" class="page">Home</a>
+        <a href="index.html#about" class="page">About</a>
+        <a href="index.html#workouts" class="page">Workouts</a>
+        <a href="index.html#todo-list" class="page">Workout Plan</a>
+        <a href="index.html#quiz-section" class="page">Fitness Plan</a>
+        <a href="fitness-products.html" class="page active-page">Fitness Products</a>
+        <a href="index.html#formm" class="page">Contact</a>
+    </nav>
+
+    <div class="nav-right">
+
+        <div class="nav-actions">
+            <a href="wishlist.html" class="nav-icon-btn" aria-label="Wishlist">
+                <i class="bi bi-heart"></i>
+                <span class="nav-count" id="wishlist-count">0</span>
+            </a>
+
+            <a href="cart.html" class="nav-icon-btn" aria-label="Shopping Cart">
+                <i class="bi bi-bag"></i>
+                <span class="nav-count" id="cart-count">0</span>
+            </a>
+        </div>
+
+        <a href="index.html#formm" class="join-btn">
+            Join Now <i class="bi bi-arrow-right"></i>
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+            <i class="bi bi-list"></i>
+        </button>
+    </div>
+
+</header>
+
+
+<!-- PRODUCTS HERO -->
+<main>
+
+    <section class="products-hero">
+
+        <div class="products-hero-content">
+
+            <p class="products-tagline">
+                YOUR FITNESS. YOUR JOURNEY.
+            </p>
+
+            <h1>
+                Gear Up.<br>
+                <span>Get Stronger.</span>
+            </h1>
+
+            <p class="products-description">
+                Discover fitness essentials designed to support
+                your workouts, build healthy habits, and keep you
+                moving towards your goals.
+            </p>
+
+            <a href="#product-catalog" class="products-cta">
+                Explore Products
+                <i class="bi bi-arrow-down-right"></i>
+            </a>
+
+        </div>
+
+        <div class="products-hero-decoration">
+            <i class="bi bi-activity"></i>
+            <p>MOVE BETTER. LIVE STRONGER.</p>
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCT CATALOG -->
+    <section class="product-catalog" id="product-catalog">
+
+        <div class="catalog-heading">
+
+            <div>
+                <p class="section-label">BUILT FOR YOUR GOALS</p>
+                <h2>Fitness Essentials<span>.</span></h2>
+            </div>
+
+            <p class="catalog-description">
+                The right essentials for every step of your fitness journey.
+            </p>
+
+        </div>
+
+                <div class="product-toolbar">
+
+                    <!-- Left: Sort by -->
+                    <div class="product-sort">
+                        <label for="sort-products">Sort by:</label>
+
+                        <select id="sort-products">
+                            <option value="default">Default Order</option>
+                            <option value="price-low-high">Price: Low to High</option>
+                            <option value="price-high-low">Price: High to Low</option>
+                            <option value="name-a-z">Name: A–Z</option>
+                            <option value="name-z-a">Name: Z–A</option>
+                        </select>
+                    </div>
+
+                    <!-- Right: Filter button and dropdown -->
+                    <div class="filter-dropdown">
+
+                        <button class="filter-toggle" id="filter-toggle"
+                                aria-expanded="false" aria-controls="filter-panel">
+                            <i class="bi bi-list"></i>
+                            <span>Filter</span>
+                        </button>
+
+                        <div class="filter-panel" id="filter-panel">
+
+                            <button class="filter-btn active-filter"
+                                    data-category="all">All Products</button>
+
+                            <button class="filter-btn"
+                                    data-category="equipment">Equipment</button>
+
+                            <button class="filter-btn"
+                                    data-category="accessories">Accessories</button>
+
+                            <button class="filter-btn"
+                                    data-category="nutrition">Nutrition</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+        <!-- PRODUCT GRID -->
+        <div class="products-grid" id="products-grid">
+            <!-------------products here----------------->
+        </div>
+
+    </section>
+
+
+    <!-- FITNESS CTA -->
+    <section class="products-cta-section">
+
+        <div>
+            <p class="section-label">KEEP MOVING FORWARD</p>
+
+            <h2>
+                Small Steps.<br>
+                <span>Stronger You.</span>
+            </h2>
+
+            <p>
+                Build your routine with the essentials that work for you.
+            </p>
+        </div>
+
+        <a href="index.html#workouts" class="products-cta">
+            Explore Workouts
+            <i class="bi bi-arrow-right"></i>
+        </a>
+
+    </section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer class="korva-footer">
+
+    <div class="footer-brand">
+        <img src="logo.png" alt="KORVA Logo" class="logo">
+
+        <p>
+            Stronger Habits. Happier You.
+        </p>
+    </div>
+
+    <div class="footer-links">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#workouts">Workouts</a>
+        <a href="fitness-products.html">Fitness Products</a>
+        <a href="index.html#formm">Contact</a>
+    </div>
+
+    <div class="footer-bottom">
+        <p>
+            &copy; 2026 KORVA. Keep moving forward.
+        </p>
+
+        <a href="index.html#home" aria-label="Back to top">
+            Back to top <i class="bi bi-arrow-up-right"></i>
+        </a>
+    </div>
+
+</footer>
+        <script src="fitness-products.js"></script>
+    </body>
+</html>
